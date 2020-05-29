@@ -1,15 +1,8 @@
-﻿using System.Collections;
+﻿using System;
 using System.Linq;
 using System.Collections.Generic;
-using UnityEngine.UI;
 using UnityEngine;
-using System.Runtime.InteropServices;
-using System;
-using System.CodeDom.Compiler;
-using System.Security.Permissions;
-using UnityEditor.PackageManager.Requests;
-using UnityEngine.PlayerLoop;
-using UnityEditorInternal;
+using UnityEngine.UI;
 
 /// <summary>
 /// Represents a card game.
@@ -53,6 +46,9 @@ public class CardGame : MonoBehaviour
 
     // The text field that displays the difficulty level.
     public List<Button> hintBttns;
+
+    // The list of sprites for the hints
+    public Sprite[] hintSprites;
 
     // The text field that displays the difficulty level.
     public Text diffLevlDspl;
@@ -98,9 +94,6 @@ public class CardGame : MonoBehaviour
 
     // The difficulty level
     private short diffLevel = 2;
-
-    // The list of sprites for the hints
-    public Sprite[] hintSprites;
 
     #endregion
 
